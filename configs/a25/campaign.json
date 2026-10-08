@@ -1,0 +1,275 @@
+{
+  "protocol_id": "A25-ADAPTIVE-20261008-v1",
+  "status": "FROZEN_BEFORE_NUMERICAL_OUTPUT",
+  "master_seed": 251008,
+  "dtype": "complex128/float64",
+  "device": "cpu",
+  "gpu_enabled": true,
+  "training_enabled": true,
+  "A_wall_seconds": 120,
+  "B0_wall_seconds": 1800,
+  "confirmation_wall_seconds": 600,
+  "clean_labels_max": 456,
+  "confirmation_states_max": 4,
+  "anatomy_grid": 8,
+  "grid": 24,
+  "side": 1.0,
+  "wavenumber": 6.283185307179586,
+  "sources": 8,
+  "receivers": 32,
+  "source_radius": 0.75,
+  "receiver_radius": 0.8,
+  "background_weak": [
+    0.1,
+    0.04
+  ],
+  "background_ring": [
+    2.0,
+    0.1
+  ],
+  "ring_radius_inner": 0.2,
+  "ring_radius_outer": 0.35,
+  "parents": [
+    2401,
+    2402,
+    2403,
+    2404
+  ],
+  "parent_families": [
+    "multiscale_shell",
+    "multiscale_shell",
+    "asymmetric_piecewise",
+    "asymmetric_piecewise"
+  ],
+  "parent_masks": {
+    "2401": {
+      "elliptical_center": [
+        -0.1,
+        0.05
+      ],
+      "y_axis_ratio": 0.8,
+      "ring": [
+        0.12,
+        0.2
+      ],
+      "inner_disk_radius": 0.08,
+      "inner_disk_weight": 0.5
+    },
+    "2402": {
+      "elliptical_center": [
+        0.08,
+        -0.07
+      ],
+      "x_axis_ratio": 1.2,
+      "ring1": [
+        0.14,
+        0.2
+      ],
+      "ring2": [
+        0.25,
+        0.3
+      ],
+      "ring2_weight": 0.6
+    },
+    "2403": {
+      "rectangle": [
+        -0.28,
+        -0.02,
+        -0.24,
+        0.13
+      ],
+      "disk_center": [
+        0.18,
+        0.12
+      ],
+      "disk_radius": 0.1,
+      "disk_weight": 0.7
+    },
+    "2404": {
+      "rectangles": [
+        [
+          -0.28,
+          -0.16,
+          -0.26,
+          0.24
+        ],
+        [
+          -0.28,
+          0.2,
+          -0.26,
+          -0.14
+        ]
+      ],
+      "disk_center": [
+        0.18,
+        0.15
+      ],
+      "disk_radius": 0.09,
+      "disk_weight": 0.65
+    }
+  },
+  "amplitudes": [
+    0.3,
+    1.2
+  ],
+  "perturbation_complex_phase": [
+    1.0,
+    0.2
+  ],
+  "noise_snr_db": [
+    null,
+    20
+  ],
+  "noise_rule": "per-state differential complex data RMS; real and imaginary variance sigma^2/2",
+  "real_lower": -0.5,
+  "real_upper": 4.0,
+  "imag_lower": 0.0,
+  "imag_upper": 0.5,
+  "feasibility_tolerance": 1e-10,
+  "pole_relative_floor": 1e-10,
+  "identity_tolerance": 1e-10,
+  "backward_residual_tolerance": 1e-10,
+  "fd_steps": [
+    0.001,
+    0.0003,
+    0.0001,
+    3e-05
+  ],
+  "fd_platform_tolerance": 1e-06,
+  "core_relative_sigma_min": 1e-10,
+  "core_condition_cap": 10000000000.0,
+  "receiver_retained_rank": 8,
+  "observable_rank": 16,
+  "target_current_rank": 32,
+  "degree": 1,
+  "orthogonal_rank_rtol": 1e-10,
+  "primary_return_rank": 16,
+  "primary_local": false,
+  "diagnostic_return_rank": 32,
+  "oversampling": 8,
+  "power_iterations": 0,
+  "rom_material_probes": 8,
+  "rom_probe_smoothing_cells": 1.0,
+  "rom_construction": "background tangents of eight fixed smooth full-grid complex material probes; all sources; leading current SVD32; no truth snapshots",
+  "blocks": 12,
+  "extra_blocks_enabled": false,
+  "max_half_step_retry": 1,
+  "tv_rule": "lambda=0.01*(1+sigma/background_data_RMS); normalized data loss .5||W residual||^2/||W yb||^2; same physical prior in every arm",
+  "step_rule": "0.8/lambda_max(Jb^T Jb/||yb||^2) in real mass coordinates; single global fixed step per background",
+  "initialization": "one common background linear-adjoint gradient step followed by the same constrained TV proximal",
+  "prox_tolerance": 1e-06,
+  "prox_max_iter": 20000,
+  "prox_check_every": 10,
+  "prox_raise_on_failure": true,
+  "prox_material_scale": 1.0,
+  "methods": [
+    "L",
+    "F",
+    "R16",
+    "R24",
+    "R32",
+    "LOCAL_R16",
+    "TASK_R32",
+    "AFFINE_ROM32",
+    "BORN_TV"
+  ],
+  "equivalent_methods": {
+    "DRESSED_LINEAR_CHI": "L",
+    "LINEAR_A_EXACT_CONVERSION_2D": "L",
+    "ORDINARY_ADJOINT_TV": "F"
+  },
+  "missing_baselines": {
+    "SOM_FFT_TSOM": "NOT_COMPARABLE: existing Gaussian-parameter fit changes material prior and optimizer",
+    "CIE_I_WT_TSOM": "NOT_IMPLEMENTED"
+  },
+  "independent_material_probes": 8,
+  "independent_data_loads": 8,
+  "independent_probe_seed_domain": 924,
+  "timing_repeats": 5,
+  "timing_conditions": "weak/ring x first parent of each family x amplitude0.3 x20dB; three primary arms, fresh material caches each repeat",
+  "gate_aggregation": "equal mean within parent over two backgrounds, two amplitudes and two noise levels; four parent clusters; preserve all failures and missing rows",
+  "full_residual_noise_budget": "noisy increase vs F <= sqrt(m_real) in true noise-white coordinates; noiseless relative increase <=1e-10",
+  "closure_denominator_floor": "max(actual noise norm,1e-12*background_data_norm); do not replace undefined ratio",
+  "gates": {
+    "G1_identity_max": 1e-10,
+    "G2_task_error_max": 0.05,
+    "G2_gradient_cosine_min": 0.99,
+    "G2_image_degradation_max": 0.05,
+    "G3_F_improvement_min": 0.1,
+    "G3_R_gain_retention_min": 0.8,
+    "G3_closure_ratio_max": 0.5,
+    "G4": "NOT_RUN_TRAINING_DISABLED",
+    "G5_time_reduction_min": 0.2
+  },
+  "quality_region": {
+    "full_chi_nrmse_max": 0.35,
+    "delta_nrmse_max": 0.6,
+    "noisy_white_residual_max_factor": 1.2,
+    "noiseless_relative_residual_max": 0.05
+  },
+  "confirmation_grid": 6,
+  "confirmation_k": 2.0,
+  "confirmation_source_count": 6,
+  "confirmation_receiver_count": 16,
+  "confirmation_regime": "known strong spherical ring background; one fixed shell and one asymmetric mask; amplitudes0.3/1.2; noiseless; L/F/R16 only",
+  "hash_policy": "Git source commits and blob IDs; no new SHA256 checks; existing SHA256 fields are historical",
+  "source_commit": "ca80ca2a29867e1b03589061dd5c17688c9acbe0",
+  "cpu_limit_seconds": 7200,
+  "gpu_limit_seconds": 14400,
+  "science_cpu_limit_seconds": 4200,
+  "control_seed": 241008,
+  "prox_wall_seconds": 2.0,
+  "prox_feasibility_tolerance": 1e-10,
+  "checkpoints": [
+    3,
+    6,
+    12
+  ],
+  "new_gates": {
+    "learning_relative_improvement": 0.1,
+    "quality_noninferiority": 0.05,
+    "speed_relative_improvement": 0.2,
+    "closure_task_error": 0.05,
+    "closure_gradient_cosine": 0.99,
+    "bootstrap_samples": 2000
+  },
+  "resource_allocations": {
+    "science_cpu": 4200,
+    "host_and_exception_cpu": 3000,
+    "gpu_health": 900,
+    "gpu_main": 7200,
+    "gpu_depth": 2700,
+    "gpu_exploration": 1800,
+    "gpu_evaluation": 900,
+    "gpu_exception": 900
+  },
+  "training": {
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "parent_batch": 4,
+    "grad_clip": 1.0,
+    "validation_every": 100,
+    "eligible_updates": [
+      500,
+      1000,
+      2000
+    ],
+    "main_blocks": 3,
+    "matched_blocks": 4,
+    "train_sizes": [
+      32,
+      64
+    ],
+    "seeds": [
+      251008
+    ],
+    "loss_weights": {
+      "material": 1.0,
+      "data": 0.1,
+      "current": 0.1,
+      "ssim": 0.05,
+      "tv": 0.01
+    },
+    "candidate_hyperparameters_locked_before_test": true
+  }
+}

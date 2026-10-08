@@ -1,6 +1,15 @@
 __pycache__/
 *.pyc
 .venv/
+.venv*/
+*.pt
+results/a25/data/*.npz
+results/a25/cache/*.npz
+results/a25/jobs/*/COST_LEDGER.jsonl
+publication/*.zip
+publication/*.tar.gz
+data/
+runs/
 private/
 *.tmp
 results/jobs/*/COST_LEDGER.jsonl
