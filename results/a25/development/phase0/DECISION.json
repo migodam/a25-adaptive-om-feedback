@@ -1,0 +1,40 @@
+{
+  "status": "HEALTHY",
+  "solver": "extended_pdhg",
+  "solvers": {
+    "old_pdhg": {
+      "all_certified": false,
+      "sum_prox_wall_s": 2.997121165972203,
+      "certified": 2,
+      "required": 14
+    },
+    "extended_pdhg": {
+      "all_certified": true,
+      "sum_prox_wall_s": 9.406780001037987,
+      "certified": 14,
+      "required": 14
+    },
+    "accelerated_pdhg": {
+      "all_certified": false,
+      "sum_prox_wall_s": 26.332180960045662,
+      "certified": 1,
+      "required": 14
+    }
+  },
+  "independent_agreement": true,
+  "references": [
+    "ring_2401_1.2_zero",
+    "ring_2402_1.2_snr20",
+    "ring_2403_0.3_zero",
+    "ring_2404_1.2_snr20",
+    "weak_2401_0.3_zero",
+    "active_box"
+  ],
+  "old_initial_failures": 12,
+  "born_failures": "REPLAY_IN_PHASE1_REQUIRED",
+  "scope": "public TV prox numerical certification; physical strong pairs next",
+  "tolerances_unchanged": true,
+  "fixed_certificate_step": 0.350017856687341,
+  "reference_precision_retry": "independent-reference-refinement-001",
+  "original_independent_failure_retained": true
+}

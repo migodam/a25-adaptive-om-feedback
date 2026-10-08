@@ -1,0 +1,31 @@
+{
+  "status": "INSUFFICIENT_BUDGET",
+  "updates": null,
+  "complete_jobs": 11,
+  "safety_factor": 1.3,
+  "candidates": [
+    {
+      "updates": 500,
+      "projected_cpu_seconds": 8432.125,
+      "projected_gpu_seconds": 8971.71653291001,
+      "fits": false
+    },
+    {
+      "updates": 1000,
+      "projected_cpu_seconds": 16864.25,
+      "projected_gpu_seconds": 17943.43306582002,
+      "fits": false
+    },
+    {
+      "updates": 2000,
+      "projected_cpu_seconds": 33728.5,
+      "projected_gpu_seconds": 35886.86613164004,
+      "fits": false
+    }
+  ],
+  "selection_basis": "cost only; no training/validation/test quality",
+  "available_cpu_seconds": 3000.0,
+  "available_gpu_seconds": 9900.0,
+  "health_job": "a25-gpu-health-batched-002",
+  "test_truth_opened": false
+}

@@ -1,0 +1,572 @@
+[
+  {
+    "job": "a25-gpu-health-001",
+    "source": "results/a25/learning/health_attempts/a25-gpu-health-001/GPU_HEALTH.json",
+    "health": {
+      "status": "HEALTH_ONLY",
+      "device": "cuda",
+      "rows": [
+        {
+          "method": "N0",
+          "blocks": 4,
+          "parameter_count": 7464200,
+          "update_wall_seconds": 0.7264415999525227,
+          "update_cpu_seconds": 0.71875,
+          "validation_wall_seconds_per_image": 0.08378514999640174,
+          "validation_cpu_seconds_per_image": 0.078125,
+          "samples_wall_seconds": [
+            0.7264415999525227,
+            0.6995665000285953
+          ],
+          "samples_cpu_seconds": [
+            0.71875,
+            0.671875
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N1",
+          "blocks": 3,
+          "parameter_count": 1409574,
+          "update_wall_seconds": 1.0075276999850757,
+          "update_cpu_seconds": 0.9375,
+          "validation_wall_seconds_per_image": 0.11072082500322722,
+          "validation_cpu_seconds_per_image": 0.09765625,
+          "samples_wall_seconds": [
+            1.0075276999850757,
+            0.9705469000036828
+          ],
+          "samples_cpu_seconds": [
+            0.921875,
+            0.9375
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N2",
+          "blocks": 3,
+          "parameter_count": 1409574,
+          "update_wall_seconds": 1.4122322999755852,
+          "update_cpu_seconds": 1.328125,
+          "validation_wall_seconds_per_image": 0.20127537500229664,
+          "validation_cpu_seconds_per_image": 0.1953125,
+          "samples_wall_seconds": [
+            1.3366811000159942,
+            1.4122322999755852
+          ],
+          "samples_cpu_seconds": [
+            1.265625,
+            1.328125
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N3",
+          "blocks": 3,
+          "parameter_count": 1409574,
+          "update_wall_seconds": 0.9660309999599122,
+          "update_cpu_seconds": 0.90625,
+          "validation_wall_seconds_per_image": 0.10645427501003724,
+          "validation_cpu_seconds_per_image": 0.09765625,
+          "samples_wall_seconds": [
+            0.9457964999601245,
+            0.9660309999599122
+          ],
+          "samples_cpu_seconds": [
+            0.90625,
+            0.890625
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N1",
+          "blocks": 4,
+          "parameter_count": 1879432,
+          "update_wall_seconds": 1.2486748000374064,
+          "update_cpu_seconds": 1.21875,
+          "validation_wall_seconds_per_image": 0.14086610000231303,
+          "validation_cpu_seconds_per_image": 0.12109375,
+          "samples_wall_seconds": [
+            1.2486748000374064,
+            1.2432682999642566
+          ],
+          "samples_cpu_seconds": [
+            1.21875,
+            1.1875
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N2",
+          "blocks": 4,
+          "parameter_count": 1879432,
+          "update_wall_seconds": 1.963488099980168,
+          "update_cpu_seconds": 1.859375,
+          "validation_wall_seconds_per_image": 0.2513130749866832,
+          "validation_cpu_seconds_per_image": 0.21875,
+          "samples_wall_seconds": [
+            1.963488099980168,
+            1.8474543999764137
+          ],
+          "samples_cpu_seconds": [
+            1.859375,
+            1.75
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N3",
+          "blocks": 4,
+          "parameter_count": 1879432,
+          "update_wall_seconds": 1.2305459000053816,
+          "update_cpu_seconds": 1.1875,
+          "validation_wall_seconds_per_image": 0.13441479999164585,
+          "validation_cpu_seconds_per_image": 0.11328125,
+          "samples_wall_seconds": [
+            1.2305459000053816,
+            1.2290366999804974
+          ],
+          "samples_cpu_seconds": [
+            1.1875,
+            1.171875
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        }
+      ],
+      "matched_parameter_counts": {
+        "3": {
+          "N1": 1409574,
+          "N2": 1409574,
+          "N3": 1409574
+        },
+        "4": {
+          "N1": 1879432,
+          "N2": 1879432,
+          "N3": 1879432
+        }
+      },
+      "known_background_only": true,
+      "scientific_accuracy_evaluated": false,
+      "initialization_cost_in_rate": false,
+      "preprocessing_rule": "health uses known background; deployment must charge certified TV initialization"
+    },
+    "cost_selection": {
+      "status": "INSUFFICIENT_BUDGET",
+      "updates": null,
+      "complete_jobs": 11,
+      "safety_factor": 1.3,
+      "candidates": [
+        {
+          "updates": 500,
+          "projected_cpu_seconds": 8987.46875,
+          "projected_gpu_seconds": 9507.509367053746,
+          "fits": false
+        },
+        {
+          "updates": 1000,
+          "projected_cpu_seconds": 17974.9375,
+          "projected_gpu_seconds": 19015.018734107492,
+          "fits": false
+        },
+        {
+          "updates": 2000,
+          "projected_cpu_seconds": 35949.875,
+          "projected_gpu_seconds": 38030.037468214985,
+          "fits": false
+        }
+      ],
+      "selection_basis": "cost only; no training/validation/test quality",
+      "available_cpu_seconds": 3000.0,
+      "available_gpu_seconds": 9900.0,
+      "health_job": "a25-gpu-health-001",
+      "test_truth_opened": false
+    }
+  },
+  {
+    "job": "a25-gpu-health-batched-002",
+    "source": "results/a25/learning/health_attempts/a25-gpu-health-batched-002/GPU_HEALTH.json",
+    "health": {
+      "status": "HEALTH_ONLY",
+      "device": "cuda",
+      "rows": [
+        {
+          "method": "N0",
+          "blocks": 4,
+          "parameter_count": 7464200,
+          "update_wall_seconds": 0.7193119000294246,
+          "update_cpu_seconds": 0.703125,
+          "validation_wall_seconds_per_image": 0.07568719999107998,
+          "validation_cpu_seconds_per_image": 0.07421875,
+          "samples_wall_seconds": [
+            0.6436035999795422,
+            0.7193119000294246
+          ],
+          "samples_cpu_seconds": [
+            0.609375,
+            0.703125
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N1",
+          "blocks": 3,
+          "parameter_count": 1409574,
+          "update_wall_seconds": 0.8566954999696463,
+          "update_cpu_seconds": 0.796875,
+          "validation_wall_seconds_per_image": 0.10147057499852963,
+          "validation_cpu_seconds_per_image": 0.1015625,
+          "samples_wall_seconds": [
+            0.8565017000073567,
+            0.8566954999696463
+          ],
+          "samples_cpu_seconds": [
+            0.78125,
+            0.796875
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N2",
+          "blocks": 3,
+          "parameter_count": 1409574,
+          "update_wall_seconds": 1.2635034999693744,
+          "update_cpu_seconds": 1.125,
+          "validation_wall_seconds_per_image": 0.19150210000225343,
+          "validation_cpu_seconds_per_image": 0.171875,
+          "samples_wall_seconds": [
+            1.2008069999865256,
+            1.2635034999693744
+          ],
+          "samples_cpu_seconds": [
+            1.125,
+            1.09375
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N3",
+          "blocks": 3,
+          "parameter_count": 1409574,
+          "update_wall_seconds": 0.9098593999515288,
+          "update_cpu_seconds": 0.875,
+          "validation_wall_seconds_per_image": 0.10697535000508651,
+          "validation_cpu_seconds_per_image": 0.09765625,
+          "samples_wall_seconds": [
+            0.8967879999545403,
+            0.9098593999515288
+          ],
+          "samples_cpu_seconds": [
+            0.828125,
+            0.875
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N1",
+          "blocks": 4,
+          "parameter_count": 1879432,
+          "update_wall_seconds": 1.2672846000059508,
+          "update_cpu_seconds": 1.15625,
+          "validation_wall_seconds_per_image": 0.13929525000276044,
+          "validation_cpu_seconds_per_image": 0.1328125,
+          "samples_wall_seconds": [
+            1.2148301000124775,
+            1.2672846000059508
+          ],
+          "samples_cpu_seconds": [
+            1.15625,
+            1.15625
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N2",
+          "blocks": 4,
+          "parameter_count": 1879432,
+          "update_wall_seconds": 1.9593247000011615,
+          "update_cpu_seconds": 1.859375,
+          "validation_wall_seconds_per_image": 0.25794920000771526,
+          "validation_cpu_seconds_per_image": 0.24609375,
+          "samples_wall_seconds": [
+            1.9593247000011615,
+            1.8688454999937676
+          ],
+          "samples_cpu_seconds": [
+            1.859375,
+            1.765625
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N3",
+          "blocks": 4,
+          "parameter_count": 1879432,
+          "update_wall_seconds": 1.1826554000144824,
+          "update_cpu_seconds": 1.171875,
+          "validation_wall_seconds_per_image": 0.1316690999956336,
+          "validation_cpu_seconds_per_image": 0.125,
+          "samples_wall_seconds": [
+            1.16933359997347,
+            1.1826554000144824
+          ],
+          "samples_cpu_seconds": [
+            1.171875,
+            1.125
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        }
+      ],
+      "matched_parameter_counts": {
+        "3": {
+          "N1": 1409574,
+          "N2": 1409574,
+          "N3": 1409574
+        },
+        "4": {
+          "N1": 1879432,
+          "N2": 1879432,
+          "N3": 1879432
+        }
+      },
+      "known_background_only": true,
+      "scientific_accuracy_evaluated": false,
+      "initialization_cost_in_rate": false,
+      "preprocessing_rule": "health uses known background; deployment must charge certified TV initialization"
+    },
+    "cost_selection": {
+      "status": "INSUFFICIENT_BUDGET",
+      "updates": null,
+      "complete_jobs": 11,
+      "safety_factor": 1.3,
+      "candidates": [
+        {
+          "updates": 500,
+          "projected_cpu_seconds": 8432.125,
+          "projected_gpu_seconds": 8971.71653291001,
+          "fits": false
+        },
+        {
+          "updates": 1000,
+          "projected_cpu_seconds": 16864.25,
+          "projected_gpu_seconds": 17943.43306582002,
+          "fits": false
+        },
+        {
+          "updates": 2000,
+          "projected_cpu_seconds": 33728.5,
+          "projected_gpu_seconds": 35886.86613164004,
+          "fits": false
+        }
+      ],
+      "selection_basis": "cost only; no training/validation/test quality",
+      "available_cpu_seconds": 3000.0,
+      "available_gpu_seconds": 9900.0,
+      "health_job": "a25-gpu-health-batched-002",
+      "test_truth_opened": false
+    }
+  },
+  {
+    "job": "a25-gpu-health-blocking-003",
+    "source": "results/a25/learning/health_attempts/a25-gpu-health-blocking-003/GPU_HEALTH.json",
+    "health": {
+      "status": "HEALTH_ONLY",
+      "device": "cuda",
+      "rows": [
+        {
+          "method": "N0",
+          "blocks": 4,
+          "parameter_count": 7464200,
+          "update_wall_seconds": 0.6396191000239924,
+          "update_cpu_seconds": 0.609375,
+          "validation_wall_seconds_per_image": 0.05541980000270996,
+          "validation_cpu_seconds_per_image": 0.05078125,
+          "samples_wall_seconds": [
+            0.6094206999987364,
+            0.6396191000239924
+          ],
+          "samples_cpu_seconds": [
+            0.5625,
+            0.609375
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N1",
+          "blocks": 3,
+          "parameter_count": 1409574,
+          "update_wall_seconds": 0.7965890999766998,
+          "update_cpu_seconds": 0.734375,
+          "validation_wall_seconds_per_image": 0.08449800001108088,
+          "validation_cpu_seconds_per_image": 0.078125,
+          "samples_wall_seconds": [
+            0.7965890999766998,
+            0.7561672999872826
+          ],
+          "samples_cpu_seconds": [
+            0.734375,
+            0.71875
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N2",
+          "blocks": 3,
+          "parameter_count": 1409574,
+          "update_wall_seconds": 1.108549500000663,
+          "update_cpu_seconds": 1.0,
+          "validation_wall_seconds_per_image": 0.1646938749909168,
+          "validation_cpu_seconds_per_image": 0.14453125,
+          "samples_wall_seconds": [
+            1.108549500000663,
+            0.9631734999711625
+          ],
+          "samples_cpu_seconds": [
+            1.0,
+            0.828125
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N3",
+          "blocks": 3,
+          "parameter_count": 1409574,
+          "update_wall_seconds": 0.7808270999812521,
+          "update_cpu_seconds": 0.6875,
+          "validation_wall_seconds_per_image": 0.06292727499385364,
+          "validation_cpu_seconds_per_image": 0.046875,
+          "samples_wall_seconds": [
+            0.7808270999812521,
+            0.7717157999868505
+          ],
+          "samples_cpu_seconds": [
+            0.625,
+            0.6875
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N1",
+          "blocks": 4,
+          "parameter_count": 1879432,
+          "update_wall_seconds": 1.0438355999649502,
+          "update_cpu_seconds": 0.84375,
+          "validation_wall_seconds_per_image": 0.11638784999377094,
+          "validation_cpu_seconds_per_image": 0.10546875,
+          "samples_wall_seconds": [
+            1.0438355999649502,
+            1.0374383999733254
+          ],
+          "samples_cpu_seconds": [
+            0.84375,
+            0.796875
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N2",
+          "blocks": 4,
+          "parameter_count": 1879432,
+          "update_wall_seconds": 1.5904839999857359,
+          "update_cpu_seconds": 1.234375,
+          "validation_wall_seconds_per_image": 0.20469147500989493,
+          "validation_cpu_seconds_per_image": 0.140625,
+          "samples_wall_seconds": [
+            1.5756210000254214,
+            1.5904839999857359
+          ],
+          "samples_cpu_seconds": [
+            1.234375,
+            1.1875
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        },
+        {
+          "method": "N3",
+          "blocks": 4,
+          "parameter_count": 1879432,
+          "update_wall_seconds": 1.0068948999978602,
+          "update_cpu_seconds": 0.890625,
+          "validation_wall_seconds_per_image": 0.10387449999689125,
+          "validation_cpu_seconds_per_image": 0.08984375,
+          "samples_wall_seconds": [
+            1.0068948999978602,
+            0.9895048000034876
+          ],
+          "samples_cpu_seconds": [
+            0.828125,
+            0.890625
+          ],
+          "status": "HEALTH_ONLY",
+          "normalizer": "unfitted health constants"
+        }
+      ],
+      "matched_parameter_counts": {
+        "3": {
+          "N1": 1409574,
+          "N2": 1409574,
+          "N3": 1409574
+        },
+        "4": {
+          "N1": 1879432,
+          "N2": 1879432,
+          "N3": 1879432
+        }
+      },
+      "known_background_only": true,
+      "scientific_accuracy_evaluated": false,
+      "initialization_cost_in_rate": false,
+      "preprocessing_rule": "health uses known background; deployment must charge certified TV initialization"
+    },
+    "cost_selection": {
+      "status": "INSUFFICIENT_BUDGET",
+      "updates": null,
+      "complete_jobs": 11,
+      "safety_factor": 1.3,
+      "candidates": [
+        {
+          "updates": 500,
+          "projected_cpu_seconds": 6682.8125,
+          "projected_gpu_seconds": 7655.196060142014,
+          "fits": false
+        },
+        {
+          "updates": 1000,
+          "projected_cpu_seconds": 13365.625,
+          "projected_gpu_seconds": 15310.392120284028,
+          "fits": false
+        },
+        {
+          "updates": 2000,
+          "projected_cpu_seconds": 26731.25,
+          "projected_gpu_seconds": 30620.784240568057,
+          "fits": false
+        }
+      ],
+      "selection_basis": "cost only; no training/validation/test quality",
+      "available_cpu_seconds": 3000.0,
+      "available_gpu_seconds": 9900.0,
+      "health_job": "a25-gpu-health-blocking-003",
+      "test_truth_opened": false
+    }
+  }
+]

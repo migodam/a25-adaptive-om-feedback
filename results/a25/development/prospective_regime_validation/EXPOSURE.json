@@ -1,0 +1,26 @@
+{
+  "role": "previously unused validation parents, prospective no-NN regime check; NOT locked validation",
+  "parent_ids": [
+    250065,
+    250066,
+    250067,
+    250068,
+    250069,
+    250070,
+    250071,
+    250072,
+    250073,
+    250074,
+    250075,
+    250076,
+    250077,
+    250078,
+    250079,
+    250080
+  ],
+  "validation_becomes_development_evidence": true,
+  "locked_id_ood": "CLOSED",
+  "scientific_nn_training": "NOT_RUN",
+  "new_fullwave_labels": 0,
+  "previous_label_cost_job": "independent-dataset-generation-001"
+}

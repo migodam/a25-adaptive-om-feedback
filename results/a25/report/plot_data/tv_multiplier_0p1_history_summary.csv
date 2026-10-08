@@ -1,0 +1,10 @@
+experiment,method,saved_trajectories,expected_trajectories,saved_steps,accepted_steps,unaccepted_steps,retried_steps,complete_12_step_histories
+tv_multiplier_0p1,AFFINE_ROM32,32,32,384,384,0,0,True
+tv_multiplier_0p1,BORN_TV,32,32,384,384,0,0,True
+tv_multiplier_0p1,F,32,32,384,384,0,0,True
+tv_multiplier_0p1,L,32,32,384,384,0,0,True
+tv_multiplier_0p1,LOCAL_R16,32,32,384,384,0,0,True
+tv_multiplier_0p1,R16,32,32,384,384,0,0,True
+tv_multiplier_0p1,R24,32,32,384,384,0,0,True
+tv_multiplier_0p1,R32,32,32,384,384,0,0,True
+tv_multiplier_0p1,TASK_R32,32,32,384,384,0,0,True

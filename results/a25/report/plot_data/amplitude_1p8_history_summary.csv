@@ -1,0 +1,4 @@
+experiment,method,saved_trajectories,expected_trajectories,saved_steps,accepted_steps,unaccepted_steps,retried_steps,complete_12_step_histories
+amplitude_1p8,F,16,16,192,192,0,0,True
+amplitude_1p8,L,16,16,192,192,0,0,True
+amplitude_1p8,TASK_R32,16,16,192,192,0,0,True

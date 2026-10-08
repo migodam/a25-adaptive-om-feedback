@@ -1,0 +1,112 @@
+{
+  "solver_certificates.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/solver_certificates.png",
+    "pdf": "results/a25/report/figures/solver_certificates.pdf",
+    "caption": "\u540c\u76ee\u6807 prox \u7684\u539f\u59cb\u5916\u90e8\u8bc1\u4e66\uff1b\u4e0d\u662f\u5b8c\u6574\u9006\u6563\u5c04\u6210\u50cf\u6027\u80fd\u3002"
+  },
+  "convergence_runtime.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/convergence_runtime.png",
+    "pdf": "results/a25/report/figures/convergence_runtime.pdf",
+    "caption": "\u51bb\u7ed3\u534f\u8bae\uff1a\u8ba4\u8bc1\u6c42\u89e3\u5668\u91cd\u653e\uff1bK1\u201312\u5b9e\u9645\u8f93\u51fa\uff0c\u6bcf\u70b9\u8981\u6c42\u5168\u90e832\u6761\u4ef6\u3002"
+  },
+  "quality_time_pareto.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/quality_time_pareto.png",
+    "pdf": "results/a25/report/figures/quality_time_pareto.pdf",
+    "caption": "\u51bb\u7ed3\u534f\u8bae\uff1a\u8ba4\u8bc1\u6c42\u89e3\u5668\u91cd\u653e\uff1b\u6bcf\u4e2aK\u5355\u72ec\u6807\u51fa\u5df2\u89c2\u5bdf\u975e\u52a3\u70b9\uff0c\u4e0d\u5916\u63a8\u4e3a\u90e8\u7f72\u901f\u5ea6\u4fdd\u8bc1\u3002"
+  },
+  "rank_task_error.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/rank_task_error.png",
+    "pdf": "results/a25/report/figures/rank_task_error.pdf",
+    "caption": "\u51bb\u7ed3\u534f\u8bae\uff1a\u8ba4\u8bc1\u6c42\u89e3\u5668\u91cd\u653e\uff1b\u5b9e\u9645forward/adjoint\u8bef\u5dee\u4e0e\u68af\u5ea6cosine\uff0c\u5931\u8d25\u4fdd\u7559\u539f\u8868\u3002"
+  },
+  "development_images.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/development_images.png",
+    "pdf": "results/a25/report/figures/development_images.pdf",
+    "caption": "\u51bb\u7ed3\u534f\u8bae\uff1a\u8ba4\u8bc1\u6c42\u89e3\u5668\u91cd\u653e\uff1b\u56fa\u5b9a\u6837\u4f8b\u7684\u6750\u6599\u589e\u91cf\u5b9e\u90e8\uff0c\u5931\u8d25\u4e0d\u6362\u6210\u6210\u529f\u5bf9\u8c61\u3002"
+  },
+  "tv0p1_convergence_runtime.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/tv0p1_convergence_runtime.png",
+    "pdf": "results/a25/report/figures/tv0p1_convergence_runtime.pdf",
+    "caption": "\u8ffd\u52a0\u5f00\u53d1\u63a2\u7d22\uff1aTV\u00d70.1\uff1bK1\u201312\u5b9e\u9645\u8f93\u51fa\uff0c\u6bcf\u70b9\u8981\u6c42\u5168\u90e832\u6761\u4ef6\u3002"
+  },
+  "tv0p1_quality_time_pareto.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/tv0p1_quality_time_pareto.png",
+    "pdf": "results/a25/report/figures/tv0p1_quality_time_pareto.pdf",
+    "caption": "\u8ffd\u52a0\u5f00\u53d1\u63a2\u7d22\uff1aTV\u00d70.1\uff1b\u6bcf\u4e2aK\u5355\u72ec\u6807\u51fa\u5df2\u89c2\u5bdf\u975e\u52a3\u70b9\uff0c\u4e0d\u5916\u63a8\u4e3a\u90e8\u7f72\u901f\u5ea6\u4fdd\u8bc1\u3002"
+  },
+  "tv0p1_rank_task_error.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/tv0p1_rank_task_error.png",
+    "pdf": "results/a25/report/figures/tv0p1_rank_task_error.pdf",
+    "caption": "\u8ffd\u52a0\u5f00\u53d1\u63a2\u7d22\uff1aTV\u00d70.1\uff1b\u5b9e\u9645forward/adjoint\u8bef\u5dee\u4e0e\u68af\u5ea6cosine\uff0c\u5931\u8d25\u4fdd\u7559\u539f\u8868\u3002"
+  },
+  "tv0p1_development_images.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/tv0p1_development_images.png",
+    "pdf": "results/a25/report/figures/tv0p1_development_images.pdf",
+    "caption": "\u8ffd\u52a0\u5f00\u53d1\u63a2\u7d22\uff1aTV\u00d70.1\uff1b\u56fa\u5b9a\u6837\u4f8b\u7684\u6750\u6599\u589e\u91cf\u5b9e\u90e8\uff0c\u5931\u8d25\u4e0d\u6362\u6210\u6210\u529f\u5bf9\u8c61\u3002"
+  },
+  "amplitude1p8_convergence_runtime.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/amplitude1p8_convergence_runtime.png",
+    "pdf": "results/a25/report/figures/amplitude1p8_convergence_runtime.pdf",
+    "caption": "\u8ffd\u52a0\u5f00\u53d1\u63a2\u7d22\uff1a\u632f\u5e451.8\uff1bK1\u201312\u5b9e\u9645\u8f93\u51fa\uff0c\u6bcf\u70b9\u8981\u6c42\u5168\u90e816\u6761\u4ef6\u3002"
+  },
+  "amplitude1p8_quality_time_pareto.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/amplitude1p8_quality_time_pareto.png",
+    "pdf": "results/a25/report/figures/amplitude1p8_quality_time_pareto.pdf",
+    "caption": "\u8ffd\u52a0\u5f00\u53d1\u63a2\u7d22\uff1a\u632f\u5e451.8\uff1b\u6bcf\u4e2aK\u5355\u72ec\u6807\u51fa\u5df2\u89c2\u5bdf\u975e\u52a3\u70b9\uff0c\u4e0d\u5916\u63a8\u4e3a\u90e8\u7f72\u901f\u5ea6\u4fdd\u8bc1\u3002"
+  },
+  "amplitude1p8_rank_task_error.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/amplitude1p8_rank_task_error.png",
+    "pdf": "results/a25/report/figures/amplitude1p8_rank_task_error.pdf",
+    "caption": "\u8ffd\u52a0\u5f00\u53d1\u63a2\u7d22\uff1a\u632f\u5e451.8\uff1b\u5b9e\u9645forward/adjoint\u8bef\u5dee\u4e0e\u68af\u5ea6cosine\uff0c\u5931\u8d25\u4fdd\u7559\u539f\u8868\u3002"
+  },
+  "amplitude1p8_development_images.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/amplitude1p8_development_images.png",
+    "pdf": "results/a25/report/figures/amplitude1p8_development_images.pdf",
+    "caption": "\u8ffd\u52a0\u5f00\u53d1\u63a2\u7d22\uff1a\u632f\u5e451.8\uff1b\u56fa\u5b9a\u6837\u4f8b\u7684\u6750\u6599\u589e\u91cf\u5b9e\u90e8\uff0c\u5931\u8d25\u4e0d\u6362\u6210\u6210\u529f\u5bf9\u8c61\u3002"
+  },
+  "prospective_family_paired_gain.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/prospective_family_paired_gain.png",
+    "pdf": "results/a25/report/figures/prospective_family_paired_gain.pdf",
+    "caption": "\u56dbfamily\u5404\u56dbparent\uff1b\u5148\u5e73\u5747clean/20dB\uff0c\u518d\u8ba1\u7b97parent\u6539\u5584\u3002family\u53ea\u753b\u5b9e\u9645\u70b9\u4e0e\u5747\u503c\uff0c\u603b\u4f53\u533a\u95f4\u4f7f\u7528\u5df2\u4fdd\u5b58bootstrap\u3002"
+  },
+  "prospective_fixed_family_images.png": {
+    "status": "GENERATED",
+    "path": "results/a25/report/figures/prospective_fixed_family_images.png",
+    "pdf": "results/a25/report/figures/prospective_fixed_family_images.pdf",
+    "caption": "\u56fa\u5b9ashell/asymmetric_piecewise/smooth/mixed_scale\u5404\u9996\u4e2aparent\uff0cclean\u3001K12\uff1b\u53ea\u8bfb\u5df2\u4fdd\u5b58\u79bb\u7ebfarrays\uff0c\u4e0d\u8bfb\u53d6locked\u3002"
+  },
+  "nn_sample_efficiency.png": {
+    "status": "NOT_RUN",
+    "reason": "no complete saved evidence",
+    "caption": "32/64\u72ec\u7acb\u8bad\u7ec3 parent\uff1b\u53ea\u4f7f\u7528\u4e00\u6b21 locked ID \u7684\u5b8c\u6574\u8bb0\u5f55\u3002"
+  },
+  "ood_quality.png": {
+    "status": "NOT_RUN",
+    "reason": "no complete saved evidence",
+    "caption": "\u7ed3\u6784\u7ec4\u5408\u4e0e\u989d\u5916\u5bf9\u6bd4\u5ea6\u7ec4\u6210\u7684 OOD\uff1b\u4e0d\u662f\u5f00\u53d1\u5bf9\u8c61\u91cd\u65b0\u547d\u540d\u3002"
+  },
+  "matched_ablation.png": {
+    "status": "NOT_RUN",
+    "reason": "no complete saved evidence",
+    "caption": "\u5339\u914d decoder\u3001\u6570\u636e\u3001\u8bad\u7ec3\u66f4\u65b0\u53ca\u5c42\u6570\u7684\u5b9e\u9645 locked \u6307\u6807\u3002"
+  },
+  "locked_images.png": {
+    "status": "NOT_RUN",
+    "reason": "no complete saved evidence",
+    "caption": "\u4e00\u6b21\u5f00\u542f\u540e\u4fdd\u5b58\u7684\u56fa\u5b9a\u9996\u4e2aID/OOD\u573a\u666f\uff1b\u5931\u8d25\u4e0d\u66ff\u6362\u4e3a\u53e6\u4e00\u6210\u529f\u573a\u666f\u3002"
+  }
+}

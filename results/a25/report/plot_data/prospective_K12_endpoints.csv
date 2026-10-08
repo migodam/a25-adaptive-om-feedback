@@ -1,0 +1,4 @@
+method,complete_parents,coverage_complete,delta_nrmse,material_nrmse,quality_hits,conditions
+L,16,True,0.7516184108592043,0.6199284056860739,0,32
+F,16,True,0.6808303573685768,0.5629573836631951,0,32
+TASK_R32,16,True,0.6820771392205673,0.5639275338174652,0,32

@@ -15,12 +15,21 @@ p.add_argument('--job',required=True);p.add_argument('--device',default='cuda')
 p.add_argument('--config',default='configs/a25/nn_admitted.json');args=p.parse_args()
 root=Path(__file__).resolve().parents[1];cfg=json.loads((root/args.config).read_text())
 if cfg.get('nn_physics_admitted') is not True:raise ForbiddenAccess('PHYSICS_CLOSURE_NOT_ADMITTED')
+from a25.cuda_runtime import configure_host_wait
+runtime=configure_host_wait(cfg.get('cuda_host_wait','default')) if args.device=='cuda' else {'policy':'cpu'}
 out=root/'results/a25/learning';out.mkdir(parents=True,exist_ok=True)
 with charged_job(root,args.job,device=args.device,config=cfg,metadata={'stage':'learning_'+args.stage}) as book,active_ledger(book):
     book.started_wall=min(book.started_wall,IMPORT_WALL);book.started_cpu=min(book.started_cpu,IMPORT_CPU)
+    write_json(root/'results/a25/jobs'/args.job/'config.json',cfg)
+    write_json(root/'results/a25/jobs'/args.job/'RUNTIME.json',runtime)
     configure_torch(cfg['master_seed'],args.device)
     refs=load_references({k:root/'data/background'/f'{k}.npz' for k in ('weak','ring')},book=book,config=cfg,device=args.device)
     if args.stage=='health':
+        if (out/'COST_SELECTED_UPDATES.json').exists():
+            prior=json.loads((out/'COST_SELECTED_UPDATES.json').read_text())
+            previous=out/'health_attempts'/prior['health_job'];previous.mkdir(parents=True,exist_ok=True)
+            for name in ('GPU_HEALTH.json','COST_SELECTED_UPDATES.json'):
+                if not (previous/name).exists(): (previous/name).write_bytes((out/name).read_bytes())
         health=benchmark_health(refs,config=cfg,book=book,device=args.device,repeats=2)
         write_json(out/'GPU_HEALTH.json',health)
         wall,process,cpu=book.elapsed()

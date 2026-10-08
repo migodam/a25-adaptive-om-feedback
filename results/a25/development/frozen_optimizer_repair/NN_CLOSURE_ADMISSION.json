@@ -1,0 +1,64 @@
+{
+  "status": "ADMITTED_PENDING_TORCH_HEALTH",
+  "selected": "TASK_R32",
+  "candidates": [
+    {
+      "method": "R16",
+      "complete": true,
+      "max_transfer_error": 0.07745471560460888,
+      "max_adjoint_error": 0.07358101152872779,
+      "min_gradient_cosine": 0.8868716633488424,
+      "max_delta_image_ratio_vs_F": 1.0201055123471718,
+      "median_online_time_ratio_vs_F": 0.865550603337587,
+      "eligible_physics": false,
+      "deployment_acceleration": "NOT_ESTABLISHED"
+    },
+    {
+      "method": "R24",
+      "complete": true,
+      "max_transfer_error": 0.05431109592964231,
+      "max_adjoint_error": 0.05161173640618443,
+      "min_gradient_cosine": 0.9549862916906969,
+      "max_delta_image_ratio_vs_F": 1.0148693805208935,
+      "median_online_time_ratio_vs_F": 0.8226753801486681,
+      "eligible_physics": false,
+      "deployment_acceleration": "NOT_ESTABLISHED"
+    },
+    {
+      "method": "R32",
+      "complete": true,
+      "max_transfer_error": 0.03616943549028924,
+      "max_adjoint_error": 0.03472741551469859,
+      "min_gradient_cosine": 0.9830193229448279,
+      "max_delta_image_ratio_vs_F": 1.0065996104903363,
+      "median_online_time_ratio_vs_F": 0.8474989008440902,
+      "eligible_physics": false,
+      "deployment_acceleration": "NOT_ESTABLISHED"
+    },
+    {
+      "method": "LOCAL_R16",
+      "complete": true,
+      "max_transfer_error": 0.07698616701946952,
+      "max_adjoint_error": 0.0742762381297254,
+      "min_gradient_cosine": 0.903447280318469,
+      "max_delta_image_ratio_vs_F": 1.0231629088662961,
+      "median_online_time_ratio_vs_F": 2.953604404750534,
+      "eligible_physics": false,
+      "deployment_acceleration": "NOT_ESTABLISHED"
+    },
+    {
+      "method": "TASK_R32",
+      "complete": true,
+      "max_transfer_error": 0.023648839351385283,
+      "max_adjoint_error": 0.02228062623484214,
+      "min_gradient_cosine": 0.9922546334474817,
+      "max_delta_image_ratio_vs_F": 1.004867951074271,
+      "median_online_time_ratio_vs_F": 0.8900843026022168,
+      "eligible_physics": true,
+      "deployment_acceleration": "NOT_ESTABLISHED"
+    }
+  ],
+  "scope": "four exposed development parents, observed reconstruction trajectory",
+  "truth_used_in_builder": false,
+  "new_scene_generalization": "NOT_ESTABLISHED"
+}

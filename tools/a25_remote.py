@@ -26,7 +26,7 @@ SHARED_LOCK = SHARED + "/runs/gpu.lock"
 PYTHON = "D:/python/python.exe"
 MAX_ZIP_BYTES = 1024**3
 MAX_RESULT_BYTES = 5 * 1024**3  # Mandatory model/checkpoint/action evidence, no campaign expansion.
-STAGES = ("health", "train", "locked")
+STAGES = ("health", "profile", "train", "locked")
 
 
 class TransportError(RuntimeError):
@@ -152,7 +152,8 @@ with zipfile.ZipFile(z) as a:
   data=a.read(m)
   immutable=(m.filename.startswith(('data/','configs/','results/a25/jobs/')))
   if dst.exists() and immutable:
-   if dst.read_bytes()!=data: raise RuntimeError('IMMUTABLE_REMOTE_INPUT_MISMATCH')
+   if dst.read_bytes()!=data:
+    if not (m.filename.endswith('/job_receipt.json') and json.loads(dst.read_text())==json.loads(data.decode('utf-8'))): raise RuntimeError('IMMUTABLE_REMOTE_INPUT_MISMATCH')
   else:
    dst.parent.mkdir(parents=True,exist_ok=True); dst.write_bytes(data)
 z.unlink()
@@ -181,7 +182,8 @@ def _run_source(helper, job, stage, device, timeout, config):
         env=dict(os.environ,PYTHONPATH=str(r/'src'),OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1')
         started=time.perf_counter();controller_cpu=time.process_time();child_cpu=0.;owned_lock=None;stopped=False
         with (logs/(job+'.stdout')).open('wb') as out,(logs/(job+'.stderr')).open('wb') as err:
-         child=subprocess.Popen([%r,'-B','-u','tools/a25_gpu_driver.py','--stage',stage,'--job',job,'--device',device,'--config',%r],cwd=r,env=env,stdout=out,stderr=err)
+         entry=['tools/a25_profile_update.py'] if stage=='profile' else ['tools/a25_gpu_driver.py','--stage',stage]
+         child=subprocess.Popen([%r,'-B','-u']+entry+['--job',job,'--device',device,'--config',%r],cwd=r,env=env,stdout=out,stderr=err)
          while child.poll() is None:
           child_cpu=measured_cpu(child)
           lock=pathlib.Path(%r)
@@ -284,7 +286,12 @@ print(json.dumps({'status':'COMPLETE','archive':%r}))
                     # Preserve both failure/action traces. Never overwrite a
                     # terminal receipt, nor silently combine divergent ledgers.
                     if destination.name == "job_receipt.json":
-                        raise TransportError("ACCEPTED_RECEIPT_MISMATCH_ON_PULL")
+                        # Windows CRLF and macOS LF are different byte encodings
+                        # of the same immutable JSON resource receipt. Verify
+                        # every field; retain the already accepted local file.
+                        if json.loads(destination.read_text()) != json.loads(data.decode('utf-8')):
+                            raise TransportError("ACCEPTED_RECEIPT_MISMATCH_ON_PULL:" + member.filename)
+                        continue
                     variant = Path(root) / "results/a25/transport_variants" / uuid.uuid4().hex / member.filename
                     variant.parent.mkdir(parents=True, exist_ok=True)
                     variant.write_bytes(data)

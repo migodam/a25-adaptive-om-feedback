@@ -1,0 +1,9 @@
+{
+  "status": "FROZEN_BEFORE_TRAINING",
+  "source_commit": "3d7fbc5375734ea3b1abba74abe8de977bd0adfe",
+  "base_commit": "ca80ca2a29867e1b03589061dd5c17688c9acbe0",
+  "test_suite": "96 passed",
+  "locked_test_inputs_read": false,
+  "sha256_checks": false,
+  "selected_closure": "TASK_R32"
+}

@@ -1,0 +1,155 @@
+{
+  "status": "HEALTH_ONLY",
+  "device": "cuda",
+  "rows": [
+    {
+      "method": "N0",
+      "blocks": 4,
+      "parameter_count": 7464200,
+      "update_wall_seconds": 0.7264415999525227,
+      "update_cpu_seconds": 0.71875,
+      "validation_wall_seconds_per_image": 0.08378514999640174,
+      "validation_cpu_seconds_per_image": 0.078125,
+      "samples_wall_seconds": [
+        0.7264415999525227,
+        0.6995665000285953
+      ],
+      "samples_cpu_seconds": [
+        0.71875,
+        0.671875
+      ],
+      "status": "HEALTH_ONLY",
+      "normalizer": "unfitted health constants"
+    },
+    {
+      "method": "N1",
+      "blocks": 3,
+      "parameter_count": 1409574,
+      "update_wall_seconds": 1.0075276999850757,
+      "update_cpu_seconds": 0.9375,
+      "validation_wall_seconds_per_image": 0.11072082500322722,
+      "validation_cpu_seconds_per_image": 0.09765625,
+      "samples_wall_seconds": [
+        1.0075276999850757,
+        0.9705469000036828
+      ],
+      "samples_cpu_seconds": [
+        0.921875,
+        0.9375
+      ],
+      "status": "HEALTH_ONLY",
+      "normalizer": "unfitted health constants"
+    },
+    {
+      "method": "N2",
+      "blocks": 3,
+      "parameter_count": 1409574,
+      "update_wall_seconds": 1.4122322999755852,
+      "update_cpu_seconds": 1.328125,
+      "validation_wall_seconds_per_image": 0.20127537500229664,
+      "validation_cpu_seconds_per_image": 0.1953125,
+      "samples_wall_seconds": [
+        1.3366811000159942,
+        1.4122322999755852
+      ],
+      "samples_cpu_seconds": [
+        1.265625,
+        1.328125
+      ],
+      "status": "HEALTH_ONLY",
+      "normalizer": "unfitted health constants"
+    },
+    {
+      "method": "N3",
+      "blocks": 3,
+      "parameter_count": 1409574,
+      "update_wall_seconds": 0.9660309999599122,
+      "update_cpu_seconds": 0.90625,
+      "validation_wall_seconds_per_image": 0.10645427501003724,
+      "validation_cpu_seconds_per_image": 0.09765625,
+      "samples_wall_seconds": [
+        0.9457964999601245,
+        0.9660309999599122
+      ],
+      "samples_cpu_seconds": [
+        0.90625,
+        0.890625
+      ],
+      "status": "HEALTH_ONLY",
+      "normalizer": "unfitted health constants"
+    },
+    {
+      "method": "N1",
+      "blocks": 4,
+      "parameter_count": 1879432,
+      "update_wall_seconds": 1.2486748000374064,
+      "update_cpu_seconds": 1.21875,
+      "validation_wall_seconds_per_image": 0.14086610000231303,
+      "validation_cpu_seconds_per_image": 0.12109375,
+      "samples_wall_seconds": [
+        1.2486748000374064,
+        1.2432682999642566
+      ],
+      "samples_cpu_seconds": [
+        1.21875,
+        1.1875
+      ],
+      "status": "HEALTH_ONLY",
+      "normalizer": "unfitted health constants"
+    },
+    {
+      "method": "N2",
+      "blocks": 4,
+      "parameter_count": 1879432,
+      "update_wall_seconds": 1.963488099980168,
+      "update_cpu_seconds": 1.859375,
+      "validation_wall_seconds_per_image": 0.2513130749866832,
+      "validation_cpu_seconds_per_image": 0.21875,
+      "samples_wall_seconds": [
+        1.963488099980168,
+        1.8474543999764137
+      ],
+      "samples_cpu_seconds": [
+        1.859375,
+        1.75
+      ],
+      "status": "HEALTH_ONLY",
+      "normalizer": "unfitted health constants"
+    },
+    {
+      "method": "N3",
+      "blocks": 4,
+      "parameter_count": 1879432,
+      "update_wall_seconds": 1.2305459000053816,
+      "update_cpu_seconds": 1.1875,
+      "validation_wall_seconds_per_image": 0.13441479999164585,
+      "validation_cpu_seconds_per_image": 0.11328125,
+      "samples_wall_seconds": [
+        1.2305459000053816,
+        1.2290366999804974
+      ],
+      "samples_cpu_seconds": [
+        1.1875,
+        1.171875
+      ],
+      "status": "HEALTH_ONLY",
+      "normalizer": "unfitted health constants"
+    }
+  ],
+  "matched_parameter_counts": {
+    "3": {
+      "N1": 1409574,
+      "N2": 1409574,
+      "N3": 1409574
+    },
+    "4": {
+      "N1": 1879432,
+      "N2": 1879432,
+      "N3": 1879432
+    }
+  },
+  "known_background_only": true,
+  "scientific_accuracy_evaluated": false,
+  "initialization_cost_in_rate": false,
+  "preprocessing_rule": "health uses known background; deployment must charge certified TV initialization"
+}

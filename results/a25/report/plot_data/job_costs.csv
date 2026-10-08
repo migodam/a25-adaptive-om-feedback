@@ -1,0 +1,57 @@
+job,stage,status,device,wall_seconds,process_cpu_seconds,charged_cpu_seconds,gpu_occupation_seconds,gpu_host_only,raw_monitor_wall_seconds,measurement_role,durable_reservations
+a25-gpu-health-001,learning_health,COMPLETE,cuda,40.864020699984394,34.9375,34.9375,40.864020699984394,False,,,{}
+a25-gpu-health-001--controller,,COMPLETE,cuda,1.481272200064268,1.328125,1.328125,1.481272200064268,,,exclusive controller/import/stop tail,{}
+a25-gpu-health-batched-002,learning_health,COMPLETE,cuda,33.328902500041295,30.84375,30.84375,33.328902500041295,False,,,{}
+a25-gpu-health-batched-002--controller,,COMPLETE,cuda,1.5584563000011258,1.453125,1.453125,1.5584563000011258,,,exclusive controller/import/stop tail,{}
+a25-gpu-health-blocking-003,learning_health,COMPLETE,cuda,28.776479799998924,24.0625,24.0625,28.776479799998924,False,,,{}
+a25-gpu-health-blocking-003--controller,,COMPLETE,cuda,1.6062398999929428,1.4375,1.4375,1.6062398999929428,,,exclusive controller/import/stop tail,{}
+a25-gpu-profile-004,,INTERRUPTED,cuda,2.0539228999987245,1.234375,1.234375,2.0539228999987245,,,controller-measured interrupted child,{}
+a25-gpu-profile-004--controller,,COMPLETE,cuda,0.0,0.0,0.0,0.0,,,exclusive controller/import/stop tail,{}
+a25-gpu-profile-retry-005,learning_profile,COMPLETE,cuda,5.401982999988832,4.3125,4.3125,5.401982999988832,False,,,{}
+a25-gpu-profile-retry-005--controller,,COMPLETE,cuda,1.5037061999901198,1.3125,1.3125,1.5037061999901198,,,exclusive controller/import/stop tail,{}
+a25-transport-preflight-33898f74f785,transport,FAILED,cpu,1.290713958995184,1.245786,1.290713958995184,0.0,False,,,{}
+a25-transport-preflight-5fb33ebae4e9,transport,COMPLETE,cpu,26.124621709022904,1.235054,26.124621709022904,0.0,False,,,{}
+a25-transport-pull-5a26032c0b05,transport,COMPLETE,cpu,4.54295479200664,2.438798,4.54295479200664,0.0,False,,,{}
+a25-transport-pull-859e8a8f5946,transport,FAILED,cpu,4.582459541998105,2.461678,4.582459541998105,0.0,False,,,{}
+a25-transport-pull-9ae6c4c9649f,transport,COMPLETE,cpu,5.05260070800432,2.5436039999999998,5.05260070800432,0.0,False,,,{}
+a25-transport-pull-a1e4fdab67ab,transport,COMPLETE,cpu,4.92549137500464,2.372781,4.92549137500464,0.0,False,,,{}
+a25-transport-pull-adc1a84bf276,transport,COMPLETE,cpu,4.507194458972663,2.472248,4.507194458972663,0.0,False,,,{}
+a25-transport-pull-fb6e56f5167f,transport,COMPLETE,cpu,8.18085091697867,2.6233560000000002,8.18085091697867,0.0,False,,,{}
+a25-transport-push-25c4bbcb88d9,transport,COMPLETE,cpu,4.815616457985016,2.375762,4.815616457985016,0.0,False,,,{}
+a25-transport-push-2a5dfa2a15e7,transport,COMPLETE,cpu,9.82101333301398,3.839587,9.82101333301398,0.0,False,,,{}
+a25-transport-push-4b376eff5fd3,transport,COMPLETE,cpu,4.757987749995664,2.49753,4.757987749995664,0.0,False,,,{}
+a25-transport-push-f5d712d85444,transport,COMPLETE,cpu,4.934249915997498,2.503854,4.934249915997498,0.0,False,,,{}
+a25-transport-run-156a552e0583,transport,COMPLETE,cuda,15.000678542011883,2.4018780000000004,2.4018780000000004,0.0,True,15.000678542011883,,{}
+a25-transport-run-552042a610f3,transport,COMPLETE,cuda,42.9974427499983,2.4038380000000004,2.4038380000000004,0.0,True,42.9974427499983,,{}
+a25-transport-run-72f5ec510878,transport,COMPLETE,cuda,50.59192304199678,2.376376,2.376376,0.0,True,50.59192304199678,,{}
+a25-transport-run-98a0acdd0992,transport,COMPLETE,cuda,10.525810207996983,2.542713,2.542713,0.0,True,10.525810207996983,,{}
+a25-transport-run-fd31f122f260,transport,COMPLETE,cuda,39.08778504101792,2.4235339999999996,2.4235339999999996,0.0,True,39.08778504101792,,{}
+code-freeze-before-learning-001,source_freeze,COMPLETE,cpu,2.6143950420082547,2.478845,2.6143950420082547,0.0,False,,,{}
+development-regime-freeze-001,regime_analysis,COMPLETE,cpu,2.548883165989537,2.516099,2.548883165989537,0.0,False,,,{}
+development-summary-002,,COMPLETE,cpu,2.802547750005033,2.768124,2.802547750005033,0.0,False,,,{}
+differentiable-physics-tests-001,tests,FAILED,cpu,1.3954212079988793,0.825376,1.3954212079988793,0.0,False,,,{}
+differentiable-physics-tests-002,tests,COMPLETE,cpu,2.7905154999752995,2.110106,2.7905154999752995,0.0,False,,,{}
+environment-setup-001,preparation,COMPLETE,cpu,4.91157349999412,4.111808,4.91157349999412,0.0,,,,{}
+final-report-export-001,report,FAILED,cpu,54.115946083999006,52.099302,54.115946083999006,0.0,False,,,{}
+final-scientific-decision-001,final_scientific_decision,COMPLETE,cpu,6.5914917920017615,5.954079,6.5914917920017615,0.0,False,,,{}
+final-scientific-scope-correction-002,final_scientific_decision,COMPLETE,cpu,6.022833291004645,5.5438659999999995,6.022833291004645,0.0,False,,,{}
+final-source-validation-001,tests,COMPLETE,cpu,4.852975667017745,4.077423,4.852975667017745,0.0,False,,,{}
+frozen-a24-tests-001,tests,COMPLETE,cpu,0.9805351669783704,0.08044300000000001,0.9805351669783704,0.0,,,,{}
+frozen-controls-tests-002,tests,COMPLETE,cpu,8.36041700001806,0.9656029999999999,8.36041700001806,0.0,,,,{}
+full-frozen-and-new-tests-001,tests,COMPLETE,cpu,4.310742333007511,3.584459,4.310742333007511,0.0,False,,,{}
+headroom-analysis-001,development_analysis,COMPLETE,cpu,1.3711106250120793,1.363478,1.3711106250120793,0.0,False,,,{}
+high-amplitude-development-001,headroom,COMPLETE,cpu,88.65714612501324,86.74884399999999,88.65714612501324,0.0,False,,,"{""new_full_forward_labels"": 8}"
+independent-dataset-generation-001,generate,COMPLETE,cpu,222.55484862500452,214.674544,222.55484862500452,0.0,False,,,"{""new_full_forward_labels"": 448}"
+independent-reference-refinement-001,reference_precision_retry,COMPLETE,cpu,0.8387729169917293,0.798593,0.8387729169917293,0.0,False,,,{}
+new-guards-and-prox-tests-002,tests,FAILED,cpu,0.9262050830002408,0.721584,0.9262050830002408,0.0,False,,,{}
+new-prox-tests-001,tests,FAILED,cpu,0.22940791700966656,0.166371,0.22940791700966656,0.0,False,,,{}
+prospective-regime-validation-001,prospective_no_nn_regime_validation,COMPLETE,cpu,50.31684574999963,46.66643,50.31684574999963,0.0,False,,,{}
+prospective-scientific-review-001,prospective_scientific_review,COMPLETE,cpu,8.520762957981788,8.323557000000001,8.520762957981788,0.0,False,,,{}
+prospective-scientific-scope-002,prospective_scientific_review,COMPLETE,cpu,8.76793433399871,8.471057,8.76793433399871,0.0,False,,,{}
+publication-preflight-001,publication_preflight,COMPLETE,cpu,3.285961874993518,2.4948829999999997,3.285961874993518,0.0,False,,,{}
+repaired-optimizer-headroom-001,headroom,COMPLETE,cpu,576.6436474579968,553.2384229999999,576.6436474579968,0.0,False,,,{}
+runtime-health-analysis-002,runtime_analysis,COMPLETE,cpu,2.3492143749899697,2.317235,2.3492143749899697,0.0,False,,,{}
+solver-certification-001,solver,COMPLETE,cpu,39.92606454199995,39.572599999999994,39.92606454199995,0.0,False,,,{}
+solver-tiny-validation-001,solver_validation,FAILED,cpu,0.3693907920096535,0.10705599999999998,0.3693907920096535,0.0,,,,{}
+solver-tiny-validation-002,solver_validation,COMPLETE,cpu,0.1218836669868324,0.09052299999999999,0.1218836669868324,0.0,,,,{}
+tv-shrinkage-exploration-001,headroom,COMPLETE,cpu,337.1396670000104,313.397398,337.1396670000104,0.0,False,,,{}

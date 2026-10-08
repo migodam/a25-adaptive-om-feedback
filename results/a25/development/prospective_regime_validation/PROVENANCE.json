@@ -1,0 +1,91 @@
+{
+  "protocol_id": "A25-PROSPECTIVE-NONN-REGIME-20261009-v1",
+  "role": "previously unused validation parents, prospective no-NN regime check; NOT locked validation",
+  "parent_ids": [
+    250065,
+    250066,
+    250067,
+    250068,
+    250069,
+    250070,
+    250071,
+    250072,
+    250073,
+    250074,
+    250075,
+    250076,
+    250077,
+    250078,
+    250079,
+    250080
+  ],
+  "parent_families": {
+    "250065": "shell",
+    "250066": "shell",
+    "250067": "shell",
+    "250068": "shell",
+    "250069": "asymmetric_piecewise",
+    "250070": "asymmetric_piecewise",
+    "250071": "asymmetric_piecewise",
+    "250072": "asymmetric_piecewise",
+    "250073": "smooth",
+    "250074": "smooth",
+    "250075": "smooth",
+    "250076": "smooth",
+    "250077": "mixed_scale",
+    "250078": "mixed_scale",
+    "250079": "mixed_scale",
+    "250080": "mixed_scale"
+  },
+  "manifest_id": "A25-NN-20261008-TASK-R32-v1:parents-v1",
+  "hypothesis_source": "results/a25/development/REGIME_HYPOTHESIS_FREEZE.json",
+  "data_split": "validation",
+  "online_archive": "data/online/validation.npz",
+  "offline_archive": "data/validation.npz",
+  "background": "weak",
+  "amplitude": 1.2,
+  "noise_snr_db": [
+    null,
+    20
+  ],
+  "methods": [
+    "L",
+    "F",
+    "TASK_R32"
+  ],
+  "tv_multiplier": 0.1,
+  "K": 12,
+  "checkpoints": [
+    3,
+    6,
+    12
+  ],
+  "solver": "extended_pdhg",
+  "randomness": {
+    "master_seed": 251008,
+    "noise": "reuse archived realizations; no new draws",
+    "task_builder_seed": 251545,
+    "task_audit_seed": [
+      251008,
+      924
+    ],
+    "bootstrap_seed": 251934
+  },
+  "bootstrap_samples": 2000,
+  "new_fullwave_labels": 0,
+  "label_provenance": {
+    "new_fullwave_labels": 0,
+    "label_cost": "already paid in independent-dataset-generation-001; not free labels",
+    "fullwave_prediction_audits": "new estimate audits charged; not new clean truth labels",
+    "current_labels": "archived full-wave current, accessible only to offline scoring"
+  },
+  "truth_access": "offline scoring after each completed/failed trajectory only",
+  "source_optimizer": "a25.campaign.trajectory; no update/prox/backend changes",
+  "validation_becomes_development_evidence": true,
+  "scientific_nn_training": "NOT_RUN",
+  "locked_id_ood": "CLOSED",
+  "physical_scope": "24x24 2D TM;8sources/32receivers; known weak background; archived passive phase(1+0.2i)/abs(1+0.2i); no3D/vector-Maxwell/unknown-background or NN claim",
+  "timing_scope": "Inclusive charged CPU job including geometry, shared background, all methods, initialization, all proposal trials, full-wave prediction audits, I/O and bootstrap. Per-image online times are descriptive; no cold/warm speed claim.",
+  "max_job_wall_seconds": 300.0,
+  "epilogue_reserve_seconds": 15.0
+}

@@ -1,0 +1,192 @@
+{
+  "protocol_id": "A25-PROSPECTIVE-NONN-REGIME-20261009-v1",
+  "status": "PREREGISTERED_BEFORE_OUTPUT",
+  "role": "previously unused validation parents, prospective no-NN regime check; NOT locked validation",
+  "hypothesis_source": "results/a25/development/REGIME_HYPOTHESIS_FREEZE.json",
+  "source_hypothesis": "At K12 with shared TV multiplier0.1, weak background and amplitude1.2 show >=10% mean delta-material benefit of F over L; require independent matched no-NN validation.",
+  "hypothesis": "At K12, weak background, amplitude1.2 and common TV multiplier0.1: equal-parent relative delta-material improvement of F versus L is at least10%.",
+  "primary_comparison": [
+    "F",
+    "L"
+  ],
+  "relative_gain_threshold": 0.1,
+  "comparison_definition": "For each parent average the two noise-condition delta NRMSE values within each arm, then compute1-F/L; average16 paired parents equally.",
+  "decision_reporting": "Complete required pairs only; report point target PASS/FAIL/HOLD and ci95 position relative to10% separately. No changes to existing A24/A25 gates.",
+  "source_manifest": "data/manifest.json",
+  "manifest_id": "A25-NN-20261008-TASK-R32-v1:parents-v1",
+  "parent_ids": [
+    250065,
+    250066,
+    250067,
+    250068,
+    250069,
+    250070,
+    250071,
+    250072,
+    250073,
+    250074,
+    250075,
+    250076,
+    250077,
+    250078,
+    250079,
+    250080
+  ],
+  "parent_families": {
+    "250065": "shell",
+    "250066": "shell",
+    "250067": "shell",
+    "250068": "shell",
+    "250069": "asymmetric_piecewise",
+    "250070": "asymmetric_piecewise",
+    "250071": "asymmetric_piecewise",
+    "250072": "asymmetric_piecewise",
+    "250073": "smooth",
+    "250074": "smooth",
+    "250075": "smooth",
+    "250076": "smooth",
+    "250077": "mixed_scale",
+    "250078": "mixed_scale",
+    "250079": "mixed_scale",
+    "250080": "mixed_scale"
+  },
+  "families": [
+    "shell",
+    "asymmetric_piecewise",
+    "smooth",
+    "mixed_scale"
+  ],
+  "background": "weak",
+  "amplitude": 1.2,
+  "noise_snr_db": [
+    null,
+    20
+  ],
+  "methods": [
+    "L",
+    "F",
+    "TASK_R32"
+  ],
+  "blocks": 12,
+  "checkpoints": [
+    3,
+    6,
+    12
+  ],
+  "tv_multiplier": 0.1,
+  "solver": "extended_pdhg",
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 251934,
+  "online_archive": "data/online/validation.npz",
+  "offline_archive": "data/validation.npz",
+  "output_directory": "results/a25/development/prospective_regime_validation",
+  "label_provenance": {
+    "new_fullwave_labels": 0,
+    "label_cost": "already paid in independent-dataset-generation-001; not free labels",
+    "fullwave_prediction_audits": "new estimate audits charged; not new clean truth labels",
+    "current_labels": "archived full-wave current, accessible only to offline scoring"
+  },
+  "information_boundary": "Builder and optimizer receive only known background/cache and OnlineObservation(data,sigma,case_id). No clean/truth/current/noise realization or archived initializer enters proposals.",
+  "locked_id_ood_status": "CLOSED",
+  "scientific_nn_training": "NOT_RUN",
+  "data_exposure": "All16 validation parents become declared development/validation evidence; never untouched locked NN test.",
+  "max_job_wall_seconds": 300.0,
+  "epilogue_reserve_seconds": 15.0,
+  "wall_stop_policy": "Cooperative check before/after charged actions at285s, reserve15s for failure/partial artifacts and summary. Native calls cannot be preempted; overshoot is recorded and never hidden.",
+  "cpu_budget_seconds": 7200.0,
+  "gpu_budget_seconds": 14400.0,
+  "device": "cpu",
+  "task_audit_at_K12": true,
+  "timing_scope": "Inclusive charged CPU job including geometry, shared background, all methods, initialization, all proposal trials, full-wave prediction audits, I/O and bootstrap. Per-image online times are descriptive; no cold/warm speed claim.",
+  "order_rule": "Ascending frozen parentIDs, clean then20dB; cyclic method rotation by(parent_id+noise_index)mod3; no metric-dependent ordering.",
+  "randomness": {
+    "master_seed": 251008,
+    "noise": "reuse archived realizations; no new draws",
+    "task_builder_seed": 251545,
+    "task_audit_seed": [
+      251008,
+      924
+    ],
+    "bootstrap_seed": 251934
+  },
+  "physical_scope": "24x24 2D TM;8sources/32receivers; known weak background; archived passive phase(1+0.2i)/abs(1+0.2i); no3D/vector-Maxwell/unknown-background or NN claim",
+  "base_config": "configs/a25/campaign.json",
+  "frozen_runtime": {
+    "master_seed": 251008,
+    "control_seed": 241008,
+    "grid": 24,
+    "side": 1.0,
+    "wavenumber": 6.283185307179586,
+    "sources": 8,
+    "receivers": 32,
+    "source_radius": 0.75,
+    "receiver_radius": 0.8,
+    "background_weak": [
+      0.1,
+      0.04
+    ],
+    "background_ring": [
+      2.0,
+      0.1
+    ],
+    "ring_radius_inner": 0.2,
+    "ring_radius_outer": 0.35,
+    "perturbation_complex_phase": [
+      1.0,
+      0.2
+    ],
+    "real_lower": -0.5,
+    "real_upper": 4.0,
+    "imag_lower": 0.0,
+    "imag_upper": 0.5,
+    "feasibility_tolerance": 1e-10,
+    "pole_relative_floor": 1e-10,
+    "identity_tolerance": 1e-10,
+    "backward_residual_tolerance": 1e-10,
+    "core_relative_sigma_min": 1e-10,
+    "core_condition_cap": 10000000000.0,
+    "orthogonal_rank_rtol": 1e-10,
+    "receiver_retained_rank": 8,
+    "observable_rank": 16,
+    "target_current_rank": 32,
+    "degree": 1,
+    "primary_return_rank": 16,
+    "oversampling": 8,
+    "power_iterations": 0,
+    "rom_material_probes": 8,
+    "rom_probe_smoothing_cells": 1.0,
+    "blocks": 12,
+    "max_half_step_retry": 1,
+    "prox_tolerance": 1e-06,
+    "prox_max_iter": 20000,
+    "prox_check_every": 10,
+    "prox_raise_on_failure": true,
+    "prox_material_scale": 1.0,
+    "independent_material_probes": 8,
+    "independent_data_loads": 8,
+    "independent_probe_seed_domain": 924,
+    "quality_region": {
+      "full_chi_nrmse_max": 0.35,
+      "delta_nrmse_max": 0.6,
+      "noisy_white_residual_max_factor": 1.2,
+      "noiseless_relative_residual_max": 0.05
+    },
+    "tv_rule": "lambda=0.01*(1+sigma/background_data_RMS); normalized data loss .5||W residual||^2/||W yb||^2; same physical prior in every arm",
+    "step_rule": "0.8/lambda_max(Jb^T Jb/||yb||^2) in real mass coordinates; single global fixed step per background",
+    "initialization": "one common background linear-adjoint gradient step followed by the same constrained TV proximal",
+    "methods": [
+      "L",
+      "F",
+      "TASK_R32"
+    ],
+    "checkpoints": [
+      3,
+      6,
+      12
+    ],
+    "prox_algorithm": "extended_pdhg",
+    "algorithm": "extended_pdhg",
+    "prox_wall_limit_seconds": 2.0,
+    "training_enabled": false
+  }
+}

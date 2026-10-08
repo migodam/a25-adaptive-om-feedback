@@ -1,0 +1,158 @@
+{
+  "scope": "four historically exposed development parents only",
+  "regimes": [
+    {
+      "experiment": "frozen_optimizer_repair",
+      "background": "weak",
+      "amplitude": 0.3,
+      "L_delta": 0.6836177333322709,
+      "F_delta": 0.6638908754935012,
+      "TASK_R32_delta": 0.663997992416794,
+      "F_relative_parent_mean_gain": 0.03206154797994942,
+      "parent_gains": [
+        0.01058121498792941,
+        0.01441194657509215,
+        0.07905517569354026,
+        0.024197854663235874
+      ]
+    },
+    {
+      "experiment": "frozen_optimizer_repair",
+      "background": "weak",
+      "amplitude": 1.2,
+      "L_delta": 0.7965237565961154,
+      "F_delta": 0.6712167363915997,
+      "TASK_R32_delta": 0.6724701378204186,
+      "F_relative_parent_mean_gain": 0.1588612407424314,
+      "parent_gains": [
+        0.08835500932878548,
+        0.1074244234393329,
+        0.2835350463582651,
+        0.15613048384334216
+      ]
+    },
+    {
+      "experiment": "frozen_optimizer_repair",
+      "background": "ring",
+      "amplitude": 0.3,
+      "L_delta": 0.9263218966533392,
+      "F_delta": 0.9259127810205937,
+      "TASK_R32_delta": 0.9259009876801582,
+      "F_relative_parent_mean_gain": 0.00044722335936189794,
+      "parent_gains": [
+        0.00016382274239445938,
+        0.001142529625832167,
+        -0.0003107917997724474,
+        0.0007933328689934127
+      ]
+    },
+    {
+      "experiment": "frozen_optimizer_repair",
+      "background": "ring",
+      "amplitude": 1.2,
+      "L_delta": 0.8084370870864713,
+      "F_delta": 0.7706480013563233,
+      "TASK_R32_delta": 0.7717748190927973,
+      "F_relative_parent_mean_gain": 0.04724679141766572,
+      "parent_gains": [
+        0.007554614329556397,
+        0.04816975567161297,
+        0.05758748299281491,
+        0.0756753126766786
+      ]
+    },
+    {
+      "experiment": "tv_multiplier_0p1",
+      "background": "weak",
+      "amplitude": 0.3,
+      "L_delta": 0.6859496193385425,
+      "F_delta": 0.6669078553591402,
+      "TASK_R32_delta": 0.667073657432682,
+      "F_relative_parent_mean_gain": 0.030644566695304132,
+      "parent_gains": [
+        0.010702995168885732,
+        0.013725281563380154,
+        0.0746429214051113,
+        0.023507068643839335
+      ]
+    },
+    {
+      "experiment": "tv_multiplier_0p1",
+      "background": "weak",
+      "amplitude": 1.2,
+      "L_delta": 0.7969192988319413,
+      "F_delta": 0.6704232456924835,
+      "TASK_R32_delta": 0.6717504572391535,
+      "F_relative_parent_mean_gain": 0.16026731318990045,
+      "parent_gains": [
+        0.08802348696454843,
+        0.11079992512600567,
+        0.2835301210835911,
+        0.1587157195854566
+      ]
+    },
+    {
+      "experiment": "tv_multiplier_0p1",
+      "background": "ring",
+      "amplitude": 0.3,
+      "L_delta": 0.6845754701804647,
+      "F_delta": 0.6759890574568346,
+      "TASK_R32_delta": 0.6763675309381697,
+      "F_relative_parent_mean_gain": 0.012892551936906138,
+      "parent_gains": [
+        0.0017452528525166988,
+        0.010766202646215417,
+        0.010324720205639348,
+        0.028734032043253088
+      ]
+    },
+    {
+      "experiment": "tv_multiplier_0p1",
+      "background": "ring",
+      "amplitude": 1.2,
+      "L_delta": 0.7260645649612425,
+      "F_delta": 0.6670252699952337,
+      "TASK_R32_delta": 0.6687389165997192,
+      "F_relative_parent_mean_gain": 0.08316183810720598,
+      "parent_gains": [
+        0.02749940240404214,
+        0.05865460762121244,
+        0.10795778835033232,
+        0.13853555405323703
+      ]
+    },
+    {
+      "experiment": "amplitude_1p8",
+      "background": "weak",
+      "amplitude": 1.8,
+      "L_delta": 0.8663837438234071,
+      "F_delta": 0.6986433838376118,
+      "TASK_R32_delta": 0.7008504289458865,
+      "F_relative_parent_mean_gain": 0.19289158218036792,
+      "parent_gains": [
+        0.12050280210933417,
+        0.16224896027938684,
+        0.2816921186376188,
+        0.20712244769513188
+      ]
+    },
+    {
+      "experiment": "amplitude_1p8",
+      "background": "ring",
+      "amplitude": 1.8,
+      "L_delta": 0.8273892310283265,
+      "F_delta": 0.7587147921284141,
+      "TASK_R32_delta": 0.7605556390113267,
+      "F_relative_parent_mean_gain": 0.08317229761510553,
+      "parent_gains": [
+        0.030025858875554312,
+        0.07556885461271623,
+        0.1116941216557279,
+        0.11540035531642368
+      ]
+    }
+  ],
+  "hypothesis": "At K12 with shared TV multiplier0.1, weak background and amplitude1.2 show >=10% mean delta-material benefit of F over L; require independent matched no-NN validation.",
+  "locked_validation_status": "NOT_OPENED; NN protocol remains original TV1.0",
+  "limits": "Not independent confirmation; noisy/background effects and fixed passive complex phase remain part of the scope."
+}

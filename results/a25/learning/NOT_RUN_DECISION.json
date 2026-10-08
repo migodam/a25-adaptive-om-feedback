@@ -1,0 +1,11 @@
+{
+  "status": "NOT_RUN",
+  "reason": "complete matched 11-model minimum-500-update CPU projection exceeds frozen allowance and total remaining CPU",
+  "minimum_updates": 500,
+  "projected_cpu_seconds": 6682.8125,
+  "projected_gpu_seconds": 7655.196060142014,
+  "host_cpu_allowance_seconds": 3000.0,
+  "GPU_healthy": true,
+  "checkpoint_count": 0,
+  "scientific_training_updates": 0
+}

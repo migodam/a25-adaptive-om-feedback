@@ -1,0 +1,125 @@
+[
+  {
+    "experiment": "frozen_optimizer_repair",
+    "K": 12,
+    "parent_count": 4,
+    "parent_mean_relative_F_gain": 0.0581456214499573,
+    "paired_parent_bootstrap_95_percent": [
+      0.03379912836964016,
+      0.08678879364513253
+    ],
+    "parents": [
+      {
+        "parent_id": 2401,
+        "L": 0.8194001302449987,
+        "F": 0.7986545117986357,
+        "TASK_R32": 0.7984201907699582,
+        "relative_F_gain": 0.025318056076168993
+      },
+      {
+        "parent_id": 2402,
+        "L": 0.8381427722476449,
+        "F": 0.802705927652678,
+        "TASK_R32": 0.8030728654563546,
+        "relative_F_gain": 0.042280200663111334
+      },
+      {
+        "parent_id": 2403,
+        "L": 0.7415672007013144,
+        "F": 0.6662054403773723,
+        "TASK_R32": 0.6671463928968298,
+        "relative_F_gain": 0.10162499130580627
+      },
+      {
+        "parent_id": 2404,
+        "L": 0.8157903704742389,
+        "F": 0.764102514433332,
+        "TASK_R32": 0.7655044878870256,
+        "relative_F_gain": 0.06335923775474261
+      }
+    ],
+    "scope": "descriptive four exposed development parents; no formal holdout claim"
+  },
+  {
+    "experiment": "tv_multiplier_0p1",
+    "K": 12,
+    "parent_count": 4,
+    "parent_mean_relative_F_gain": 0.07625560367448883,
+    "paired_parent_bootstrap_95_percent": [
+      0.0414069924058032,
+      0.11110421494317446
+    ],
+    "parents": [
+      {
+        "parent_id": 2401,
+        "L": 0.7478134119461717,
+        "F": 0.7231252129635812,
+        "TASK_R32": 0.7229055686269537,
+        "relative_F_gain": 0.03301384889358938
+      },
+      {
+        "parent_id": 2402,
+        "L": 0.7850143036515518,
+        "F": 0.745920484632117,
+        "TASK_R32": 0.7463712769597378,
+        "relative_F_gain": 0.04980013591801702
+      },
+      {
+        "parent_id": 2403,
+        "L": 0.6362282935671616,
+        "F": 0.5525894922384496,
+        "TASK_R32": 0.553574070459597,
+        "relative_F_gain": 0.1314603612797094
+      },
+      {
+        "parent_id": 2404,
+        "L": 0.7244529441473061,
+        "F": 0.6587102386695444,
+        "TASK_R32": 0.661079646163436,
+        "relative_F_gain": 0.09074806860663953
+      }
+    ],
+    "scope": "descriptive four exposed development parents; no formal holdout claim"
+  },
+  {
+    "experiment": "amplitude_1p8",
+    "K": 12,
+    "parent_count": 4,
+    "parent_mean_relative_F_gain": 0.13957488894073566,
+    "paired_parent_bootstrap_95_percent": [
+      0.09724783762924646,
+      0.18163889342941575
+    ],
+    "parents": [
+      {
+        "parent_id": 2401,
+        "L": 0.8247894122983467,
+        "F": 0.7624720499569786,
+        "TASK_R32": 0.7628470476854994,
+        "relative_F_gain": 0.07555548290528535
+      },
+      {
+        "parent_id": 2402,
+        "L": 0.8736449682197734,
+        "F": 0.7692738485849949,
+        "TASK_R32": 0.7703389901868025,
+        "relative_F_gain": 0.1194662859988258
+      },
+      {
+        "parent_id": 2403,
+        "L": 0.8272822835157526,
+        "F": 0.6610375218861386,
+        "TASK_R32": 0.6637656667977503,
+        "relative_F_gain": 0.2009528850577017
+      },
+      {
+        "parent_id": 2404,
+        "L": 0.8618292856695946,
+        "F": 0.7219329315039398,
+        "TASK_R32": 0.7258604312443745,
+        "relative_F_gain": 0.1623249018011298
+      }
+    ],
+    "scope": "descriptive four exposed development parents; no formal holdout claim"
+  }
+]

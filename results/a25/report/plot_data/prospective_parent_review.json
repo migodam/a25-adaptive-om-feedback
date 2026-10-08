@@ -1,0 +1,50 @@
+{
+  "status": "POSITIVE_NARROW_REGIME_PARTIAL_THRESHOLD_CONFIRMATION",
+  "role": "previously unused validation parents, prospective no-NN regime check; NOT locked validation",
+  "source": "development/prospective_regime_validation/SUMMARY.json",
+  "K": 12,
+  "tv_multiplier": 0.1,
+  "background": "weak",
+  "amplitude": 1.2,
+  "paired_parents": 16,
+  "F_vs_L_parent_mean_relative_gain": 0.10517039318291257,
+  "ci95": [
+    0.06594354225582005,
+    0.1531568670883614
+  ],
+  "point_target_status": "PASS",
+  "positive_improvement_supported": true,
+  "minimum_10_percent_improvement_confirmed": false,
+  "family_parent_mean_relative_gains": {
+    "asymmetric_piecewise": 0.03887713264553941,
+    "mixed_scale": 0.08290945726778401,
+    "shell": 0.06730832178347762,
+    "smooth": 0.23158666103484926
+  },
+  "parent_equal_delta_nrmse": {
+    "L": 0.7516184108592043,
+    "F": 0.6808303573685768,
+    "TASK_R32": 0.6820771392205673
+  },
+  "ratio_of_parent_equal_mean_gain": 0.09418084026135942,
+  "estimands_distinguished": "primary mean of paired parent-relative gains; secondary ratio of mean errors",
+  "compression": {
+    "max_transfer_error": 0.017822203763375438,
+    "max_adjoint_error": 0.01681988547545252,
+    "min_gradient_cosine": 0.9756874777116267,
+    "max_state_data_error": 0.005546922815827388,
+    "max_material_error_ratio_to_F": 1.0138212782922529,
+    "status": "FAIL_FIXED_K12_ENDPOINTS",
+    "scope": "32 weak-background amplitude1.2 K12 estimates; not intermediate or neural/OOD states"
+  },
+  "joint_quality_hits_out_of_32": {
+    "L": 0,
+    "F": 0,
+    "TASK_R32": 0
+  },
+  "NN": "NOT_RUN",
+  "locked_ID_OOD": "CLOSED",
+  "validation_now_exposed": true,
+  "new_clean_labels": 0,
+  "speed_advantage": "NOT_ESTABLISHED; descriptive per-image times are not matched cold/warm evidence"
+}

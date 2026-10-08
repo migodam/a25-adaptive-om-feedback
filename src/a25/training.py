@@ -267,7 +267,12 @@ def one_update(model, optimizer, batch, *, config, book):
                                               float(config.get("training", {}).get("grad_clip", 1.)),
                                               error_if_nonfinite=True)
         optimizer.step()
-        if any(not torch.isfinite(parameter).all() for parameter in model.parameters()):
+        if config.get('batched_parameter_finiteness', False):
+            flags = torch.stack([torch.isfinite(parameter).all() for parameter in model.parameters()])
+            finite = bool(flags.all())
+        else:
+            finite = not any(not torch.isfinite(parameter).all() for parameter in model.parameters())
+        if not finite:
             raise NumericalFailure("NONFINITE_LEARNED_PARAMETERS")
     return {key: float(value.detach()) for key, value in components.items()}, float(norm.detach())
 

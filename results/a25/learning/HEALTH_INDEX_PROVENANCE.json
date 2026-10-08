@@ -1,0 +1,7 @@
+{
+  "adopted_job": "a25-gpu-health-blocking-003",
+  "cost_source": "results/a25/learning/COST_SELECTED_UPDATES.json",
+  "health_source": "results/a25/learning/GPU_HEALTH.json",
+  "old_attempts_retained": true,
+  "reason": "explicit adoption of completed runtime-only attempt"
+}

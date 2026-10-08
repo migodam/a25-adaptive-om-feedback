@@ -1,0 +1,10 @@
+experiment,method,saved_trajectories,expected_trajectories,saved_steps,accepted_steps,unaccepted_steps,retried_steps,complete_12_step_histories
+frozen_optimizer_repair,AFFINE_ROM32,32,32,384,384,0,0,True
+frozen_optimizer_repair,BORN_TV,32,32,384,377,7,7,True
+frozen_optimizer_repair,F,32,32,384,347,37,37,True
+frozen_optimizer_repair,L,32,32,384,352,32,34,True
+frozen_optimizer_repair,LOCAL_R16,32,32,384,349,35,35,True
+frozen_optimizer_repair,R16,32,32,384,349,35,35,True
+frozen_optimizer_repair,R24,32,32,384,361,23,24,True
+frozen_optimizer_repair,R32,32,32,384,353,31,32,True
+frozen_optimizer_repair,TASK_R32,32,32,384,348,36,36,True

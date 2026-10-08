@@ -1,0 +1,16 @@
+{
+  "A24_commit": "ca80ca2a29867e1b03589061dd5c17688c9acbe0",
+  "A25_initial_implementation_commit": "3d7fbc5375734ea3b1abba74abe8de977bd0adfe",
+  "worktree_branch": "a25-adaptive-campaign",
+  "A24_source_and_gate_outputs_preserved": true,
+  "new_modules": "src/a25, tools/a25_*, tests/test_a25_*",
+  "physics": "existing A2 2D scalar TM VIE; no new solver, no new Green kernel",
+  "neural_baseline": "SOM-Net paper migration, not author official code/checkpoint",
+  "paper_source": "https://arxiv.org/abs/2209.03567",
+  "CPU_production_environment": "Python 3.13.13 local science environment; Clarabel 0.11.1",
+  "GPU_environment": "existing Python 3.10.9, Torch 2.6.0+cu124, RTX4060 Laptop 8GB",
+  "SHA256_checks_performed": false,
+  "third_party_environments_or_paper_fulltexts_distributed": false,
+  "locked_ID_OOD_arrays_released": false,
+  "publication_scope": "code, frozen configs, factual reports, actual development/validation evidence and training inputs; NOT_RUN remains explicit"
+}
